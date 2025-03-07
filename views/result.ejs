@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 20px;
+    }
+    .yes {
+      color: green;
+    }
+    .no {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Vote Results</h1>
+  <div class="result yes">
+    <p>Yes Votes: <%= yesVotes %> (<%= yesPercentage %>%)</p>
+  </div>
+  <div class="result no">
+    <p>No Votes: <%= noVotes %> (<%= noPercentage %>%)</p>
+  </div>
+
+</body>
+</html>
