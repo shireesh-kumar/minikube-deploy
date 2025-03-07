@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name : voting-app-deploy
+  labels:
+    name: voting-app-deploy
+    app: demo-voting-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: front-end-pod
+      app: demo-voting-app
+  template:
+    metadata:
+      name: front-end-pod
+      labels:
+        name: front-end-pod
+        app: demo-voting-app
+      
+    spec:
+      containers:
+        - name : node
+          image : shireesh1998/node:latest
+          ports:
+            - containerPort: 3000    

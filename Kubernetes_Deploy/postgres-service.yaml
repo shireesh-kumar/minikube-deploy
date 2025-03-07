@@ -1,0 +1,15 @@
+apiVersion: v1
+kind : Service
+metadata:
+  name: pg-container
+  labels: 
+    name: postgres-service
+    app: demo-voting-app
+spec:
+  ports:
+    - port: 5432
+      targetPort: 5432
+  selector:
+    name: postgres-db-pod
+    app: demo-voting-app
+

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind : Pod
+metadata:
+  name: worker-app-pod
+  labels:
+    name: worker-app-pod
+    app: demo-voting-app
+  
+spec:
+  containers:
+    - name : python
+      image : shireesh1998/python:latest
