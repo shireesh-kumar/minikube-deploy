@@ -2,7 +2,7 @@
 
 ## Overview
 
-A Kubernetes-based voting application designed to demonstrate core Kubernetes concepts. The application consists of multiple microservices working together to handle voting, processing, and result aggregation.
+A Kubernetes-based voting application is designed to demonstrate core Kubernetes concepts by deploying it on Minikube, which provides a local, single-node Kubernetes cluster for development and testing
 
 ## Components
 
